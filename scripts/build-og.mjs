@@ -268,7 +268,7 @@ function poemCard(poem, variant) {
 }
 
 // Structured like the printed cover (and the site's landing page): author on
-// top, French title dominant in the middle, MCMXIX / ტფილისი at the foot 
+// top, French title dominant in the middle, MCMXIX / ტფილისი at the foot
 // everything centered, no author photo (owner, 2026-07-31), pure typography.
 function coverCard(variant) {
   const s = scaleOf(variant);

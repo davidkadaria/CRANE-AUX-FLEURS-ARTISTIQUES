@@ -27,9 +27,7 @@ function toRoman(n) {
       n -= value;
     }
   }
-  // The printed 1919 book contracts XXX to XC (e.g. poem 80 is LXC, not
-  // LXXX) - non-classical, kept for facsimile fidelity (owner, 2026-07-31)
-  return out.replace('XXX', 'XC');
+  return out;
 }
 
 const errors = [];
