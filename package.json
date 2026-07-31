@@ -19,6 +19,7 @@
     "build:icons": "node scripts/build-icons.mjs"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.12",
     "next": "^16.2.12",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"

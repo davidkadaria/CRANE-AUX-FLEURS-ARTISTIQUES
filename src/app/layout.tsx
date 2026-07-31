@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import { FONT_SIZES } from '@/lib/storage';
 import { SITE_URL, socialMeta } from '@/lib/site';
@@ -66,6 +67,11 @@ export default function RootLayout({
       <body>
         <script dangerouslySetInnerHTML={{ __html: initReadingState }} />
         {children}
+        {/* GA4 - only when the build has the id (Vercel env; local builds
+            without it stay analytics-free) */}
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+        )}
       </body>
     </html>
   );
