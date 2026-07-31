@@ -23,15 +23,19 @@ function write(key: string, value: string): void {
 
 export function getTheme(): Theme {
   const stored = read('theme');
+  // Default is LIGHT, not the system preference - the cream facsimile is
+  // the intended first impression (owner, 2026-07-31)
   if (stored === 'light' || stored === 'dark') return stored;
-  return window.matchMedia('(prefers-color-scheme: dark)').matches
-    ? 'dark'
-    : 'light';
+  return 'light';
 }
 
 export function setTheme(theme: Theme): void {
   write('theme', theme);
   document.documentElement.setAttribute('data-theme', theme);
+  // Keep the browser chrome color in step with the page
+  document
+    .querySelector('meta[name="theme-color"]')
+    ?.setAttribute('content', theme === 'dark' ? '#131722' : '#f5efdf');
 }
 
 export function getFontSize(): number {

@@ -33,22 +33,22 @@ export const metadata: Metadata = {
   }),
 };
 
-// Browser chrome color follows the paper: cream in light, night blue in dark
+// Browser chrome color follows the page theme (default light - the init
+// script and setTheme() swap it to night blue when dark is active)
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#f5efdf' },
-    { media: '(prefers-color-scheme: dark)', color: '#131722' },
-  ],
+  themeColor: '#f5efdf',
 };
 
 // Runs before paint: applies persisted theme (default: system) and font size  no flash.
 const initReadingState = `(function () {
   try {
     var theme = localStorage.getItem('theme');
-    if (theme !== 'light' && theme !== 'dark') {
-      theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
+    if (theme !== 'light' && theme !== 'dark') theme = 'light';
     document.documentElement.setAttribute('data-theme', theme);
+    if (theme === 'dark') {
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', '#131722');
+    }
     var fontSize = Number(localStorage.getItem('fontSize'));
     if ([${FONT_SIZES.join(', ')}].indexOf(fontSize) !== -1) {
       document.documentElement.style.setProperty('--poem-font-size', fontSize + 'px');
