@@ -5,9 +5,9 @@ import { socialMeta } from '@/lib/site';
 import './not-found.css';
 
 export const metadata: Metadata = {
-  title: 'გვერდი ვერ მოიძებნა  არტისტული ყვავილები',
+  title: 'გვერდი ვერ მოიძებნა - არტისტული ყვავილები',
   ...socialMeta({
-    title: 'გვერდი ვერ მოიძებნა  არტისტული ყვავილები',
+    title: 'გვერდი ვერ მოიძებნა - არტისტული ყვავილები',
     slug: 'not-found',
   }),
 };
@@ -20,7 +20,7 @@ export default function NotFound() {
       <div className="NotFound">
         <h1 className="NotFound__title">გვერდი ვერ მოიძებნა</h1>
         <p className="NotFound__hint">
-          ეს ფურცელი წიგნში არ არის  დაბრუნდი{' '}
+          ეს ფურცელი წიგნში არ არის - დაბრუნდი{' '}
           <Link className="NotFound__link" href="/">
             გარეკანზე
           </Link>{' '}

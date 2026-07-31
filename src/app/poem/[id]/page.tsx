@@ -27,10 +27,10 @@ export async function generateMetadata({
   const { id } = await params;
   const poem = getPoemById(Number(id));
   if (!poem) return {};
-  const title = `${poem.title}  არტისტული ყვავილები`;
+  const title = `${poem.title} - არტისტული ყვავილები`;
   return {
     title,
-    description: `${poem.firstLine}…  გალაკტიონ ტაბიძე, არტისტული ყვავილები (1919), ${poem.roman}`,
+    description: `${poem.firstLine}… - გალაკტიონ ტაბიძე, არტისტული ყვავილები (1919), ${poem.roman}`,
     ...socialMeta({
       title: poem.title,
       description: `${poem.firstLine}…`,

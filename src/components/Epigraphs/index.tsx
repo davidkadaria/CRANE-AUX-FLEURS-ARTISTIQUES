@@ -27,7 +27,7 @@ export function Epigraphs() {
               </span>
             ))}
           </p>
-          <p className="Epigraphs__author"> {epigraph.author}</p>
+          <p className="Epigraphs__author">— {epigraph.author}</p>
         </blockquote>
       ))}
     </section>
