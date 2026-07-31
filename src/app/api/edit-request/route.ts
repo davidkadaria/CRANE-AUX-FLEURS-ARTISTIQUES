@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { SITE_URL } from '@/lib/site';
 
 // Reader-submitted edit requests (text selection → modal → here → Telegram).
 // Needs TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID in the environment (Vercel);
@@ -55,9 +56,7 @@ export async function POST(request: Request) {
     }
   }
 
-  const poemUrl = Number.isInteger(poemId)
-    ? `https://galaktioni.ge/poem/${poemId}/`
-    : '';
+  const poemUrl = Number.isInteger(poemId) ? `${SITE_URL}/poem/${poemId}/` : '';
   const text = [
     '📖 <b>რედაქტირების მოთხოვნა</b>',
     '',
