@@ -70,7 +70,9 @@ export function Toc() {
           </li>
         ))}
       </ol>
-      <p className="Toc__count">⋯ {shown.length} ლექსი ⋯</p>
+      <p className="Toc__count" aria-live="polite">
+        ⋯ {shown.length} ლექსი ⋯
+      </p>
     </div>
   );
 }

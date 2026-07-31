@@ -18,8 +18,9 @@ const EPIGRAPHS = [
 export function Epigraphs() {
   return (
     <section className="Epigraphs">
+      <h1 className="u-visuallyHidden">ეპიგრაფები</h1>
       {EPIGRAPHS.map((epigraph) => (
-        <blockquote className="Epigraphs__item" key={epigraph.author}>
+        <blockquote className="Epigraphs__item" lang="fr" key={epigraph.author}>
           <p className="Epigraphs__text">
             {epigraph.text.split('\n').map((line, lineIndex) => (
               <span className="Epigraphs__line" key={lineIndex}>

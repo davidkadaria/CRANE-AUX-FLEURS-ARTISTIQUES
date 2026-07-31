@@ -68,6 +68,7 @@ export default async function PoemPage({ params }: PoemPageProps) {
             prev ? (
               <Link
                 href={`/poem/${prev.id}/`}
+                aria-label={`წინა ლექსი: ${prev.title}`}
                 data-tip={prev.title}
                 data-tip-pos="left"
               >
@@ -76,6 +77,7 @@ export default async function PoemPage({ params }: PoemPageProps) {
             ) : (
               <Link
                 href="/epigrafebi/"
+                aria-label="ეპიგრაფები"
                 data-tip="ეპიგრაფები"
                 data-tip-pos="left"
               >
@@ -88,6 +90,7 @@ export default async function PoemPage({ params }: PoemPageProps) {
             next && (
               <Link
                 href={`/poem/${next.id}/`}
+                aria-label={`შემდეგი ლექსი: ${next.title}`}
                 data-tip={next.title}
                 data-tip-pos="right"
               >

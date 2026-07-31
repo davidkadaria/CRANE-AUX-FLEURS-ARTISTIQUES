@@ -20,6 +20,7 @@ export default function EpigraphsPage() {
           right={
             <Link
               href="/poem/1/"
+              aria-label={`პირველი ლექსი: ${getPoemById(1)?.title}`}
               data-tip={getPoemById(1)?.title}
               data-tip-pos="right"
             >

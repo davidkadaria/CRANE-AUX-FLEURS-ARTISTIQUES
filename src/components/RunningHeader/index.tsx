@@ -12,7 +12,7 @@ export function RunningHeader() {
         data-tip-side="bottom"
       >
         <span className="RunningHeader__author">გალაკტიონი</span>
-        <span className="RunningHeader__brand">
+        <span className="RunningHeader__brand" lang="fr">
           Crâne aux fleurs artistiques
         </span>
       </Link>

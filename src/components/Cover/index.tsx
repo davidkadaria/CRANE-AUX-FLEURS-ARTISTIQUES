@@ -10,7 +10,7 @@ export function Cover() {
         <div className="Cover__inner">
           <p className="Cover__author">გალაკტიონ ტაბიძე</p>
           <div className="Cover__middle">
-            <h1 className="Cover__title">
+            <h1 className="Cover__title" lang="fr">
               CRÂNE AUX
               <br />
               FLEURS ARTISTIQUES

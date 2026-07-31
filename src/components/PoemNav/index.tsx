@@ -22,6 +22,16 @@ export function PoemNav({ prevHref, nextHref }: PoemNavProps) {
     let tracking = false;
 
     function handleKeyDown(event: KeyboardEvent) {
+      // Plain arrows only - Alt+Left is the browser's own Back, and arrows
+      // inside inputs must keep editing the input
+      if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey)
+        return;
+      const target = event.target as HTMLElement;
+      if (
+        target.isContentEditable ||
+        /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName)
+      )
+        return;
       if (event.key === 'ArrowLeft' && prevHref) router.push(prevHref);
       if (event.key === 'ArrowRight' && nextHref) router.push(nextHref);
     }
