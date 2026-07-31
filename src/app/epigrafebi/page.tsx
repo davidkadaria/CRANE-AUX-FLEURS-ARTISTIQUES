@@ -7,6 +7,7 @@ import { socialMeta } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'ეპიგრაფები - თავის ქალა არტისტული ყვავილებით',
   description: 'კრებულის დასაწყისში წამძღვარებული ოთხი ციტატა',
+  alternates: { canonical: '/epigrafebi/' },
   ...socialMeta({
     title: 'ეპიგრაფები - არტისტული ყვავილები',
     description: 'კრებულის დასაწყისში წამძღვარებული ციტატები',

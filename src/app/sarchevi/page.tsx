@@ -5,6 +5,7 @@ import { socialMeta } from '@/lib/site';
 export const metadata: Metadata = {
   title: 'სარჩევი - თავის ქალა არტისტული ყვავილებით',
   description: 'სარჩევის გვერდი, ლექსებს შორის ნავიგაციის გასამარტივებლად',
+  alternates: { canonical: '/sarchevi/' },
   ...socialMeta({
     title: 'სარჩევი - არტისტული ყვავილები',
     description: 'სარჩევის გვერდი',

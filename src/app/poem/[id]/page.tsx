@@ -32,6 +32,7 @@ export async function generateMetadata({
   return {
     title,
     description: `${poem.firstLine}… - გალაკტიონ ტაბიძე, არტისტული ყვავილები (1919), ${poem.roman}`,
+    alternates: { canonical: `/poem/${poem.id}/` },
     ...socialMeta({
       title: `${poem.title} - არტისტული ყვავილები`,
       description: `${poem.firstLine}…`,
