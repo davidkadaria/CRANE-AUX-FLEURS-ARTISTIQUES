@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: 'თავის ქალა არტისტული ყვავილებით - გალაკტიონ ტაბიძე',
   description,
+  verification: {
+    google: '7V7U7I4VTVg8YKXukqYXcO2dT4N5D0BQZYmgj6I07r8',
+  },
   // Icon set from scripts/build-icons.mjs (V3 skull-with-bouquet mark);
   // /favicon.ico is picked up from public/ by browsers automatically
   icons: {
