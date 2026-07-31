@@ -1,4 +1,5 @@
 export * from './Cover';
+export * from './Colophon';
 export * from './CoverActions';
 export * from './Epigraphs';
 export * from './FooterBar';

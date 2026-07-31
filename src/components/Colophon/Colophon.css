@@ -1,0 +1,28 @@
+.Colophon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--color-cover-hint);
+}
+
+.Colophon__github {
+    display: inline-flex;
+    padding: 6px;
+    font-size: 17px;
+    transition: color 0.2s;
+}
+
+.Colophon__github:hover,
+.Colophon__github:focus-visible {
+    color: var(--color-accent);
+}
+
+[data-theme='dark'] .Colophon__github:hover,
+[data-theme='dark'] .Colophon__github:focus-visible {
+    color: var(--color-title);
+}

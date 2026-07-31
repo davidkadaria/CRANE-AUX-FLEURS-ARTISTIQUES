@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Colophon } from '@/components/Colophon';
 import { CoverActions } from '@/components/CoverActions';
 import { Icon } from '@/components/Icon';
 import './Cover.css';
@@ -28,6 +29,7 @@ export function Cover() {
         </div>
       </div>
       <CoverActions />
+      <Colophon />
     </div>
   );
 }
