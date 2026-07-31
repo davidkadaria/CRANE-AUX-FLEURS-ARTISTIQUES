@@ -7,7 +7,7 @@ import './not-found.css';
 export const metadata: Metadata = {
   title: 'გვერდი ვერ მოიძებნა - თავის ქალა არტისტული ყვავილებით',
   ...socialMeta({
-    title: 'გვერდი ვერ მოიძებნა - თავის ქალა არტისტული ყვავილებით',
+    title: 'გვერდი ვერ მოიძებნა - არტისტული ყვავილები',
     slug: 'not-found',
   }),
 };

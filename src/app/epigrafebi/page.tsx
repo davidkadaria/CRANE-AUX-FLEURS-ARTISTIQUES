@@ -6,8 +6,10 @@ import { socialMeta } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'ეპიგრაფები - თავის ქალა არტისტული ყვავილებით',
+  description: 'კრებულის დასაწყისში წამძღვარებული ოთხი ციტატა',
   ...socialMeta({
-    title: 'ეპიგრაფები - თავის ქალა არტისტული ყვავილებით',
+    title: 'ეპიგრაფები - არტისტული ყვავილები',
+    description: 'კრებულის დასაწყისში წამძღვარებული ციტატები',
     slug: 'epigrafebi',
   }),
 };

@@ -27,12 +27,12 @@ export async function generateMetadata({
   const { id } = await params;
   const poem = getPoemById(Number(id));
   if (!poem) return {};
-  const title = `${poem.title} - არტისტული ყვავილები`;
+  const title = `${poem.title} - თავის ქალა არტისტული ყვავილებით`;
   return {
     title,
     description: `${poem.firstLine}… - გალაკტიონ ტაბიძე, არტისტული ყვავილები (1919), ${poem.roman}`,
     ...socialMeta({
-      title: poem.title,
+      title: `${poem.title} - არტისტული ყვავილები`,
       description: `${poem.firstLine}…`,
       slug: `poem-${poem.id}`,
     }),
@@ -50,7 +50,7 @@ export default async function PoemPage({ params }: PoemPageProps) {
     '@context': 'https://schema.org',
     '@type': 'CreativeWork',
     name: poem.title,
-    author: { '@type': 'Person', name: 'გალაკტიონ ტაბიძე' },
+    author: { '@type': 'Person', name: 'გალაკტიონი' },
     isPartOf: {
       '@type': 'Book',
       name: 'თავის ქალა არტისტული ყვავილებით',

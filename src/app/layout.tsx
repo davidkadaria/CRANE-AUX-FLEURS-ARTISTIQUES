@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     apple: '/icons/apple-touch-icon.png',
   },
   ...socialMeta({
-    title: 'თავის ქალა არტისტული ყვავილებით - გალაკტიონ ტაბიძე',
+    title: 'არტისტული ყვავილები - გალაკტიონი',
     description,
     slug: 'cover',
   }),

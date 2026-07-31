@@ -4,9 +4,10 @@ import { socialMeta } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'სარჩევი - თავის ქალა არტისტული ყვავილებით',
+  description: 'სარჩევის გვერდი, ლექსებს შორის ნავიგაციის გასამარტივებლად',
   ...socialMeta({
-    title: 'სარჩევი - თავის ქალა არტისტული ყვავილებით',
-    description: '86 ლექსი',
+    title: 'სარჩევი - არტისტული ყვავილები',
+    description: 'სარჩევის გვერდი',
     slug: 'sarchevi',
   }),
 };

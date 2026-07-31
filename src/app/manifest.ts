@@ -9,7 +9,7 @@ export const dynamic = 'force-static';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: `${SITE_NAME} - გალაკტიონი`,
-    short_name: SITE_NAME,
+    short_name: 'არტისტული ყვავილები',
     description:
       'გალაკტიონ ტაბიძის 1919 წელს გამოცემული პოეტური კრებულის „თავის ქალა არტისტული ყვავილებით" (Crâne aux Fleurs Artistiques) ვებ-ვერსია.',
     lang: 'ka',
