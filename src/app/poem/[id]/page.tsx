@@ -53,7 +53,7 @@ export default async function PoemPage({ params }: PoemPageProps) {
     author: { '@type': 'Person', name: 'გალაკტიონ ტაბიძე' },
     isPartOf: {
       '@type': 'Book',
-      name: 'არტისტული ყვავილები',
+      name: 'თავის ქალა არტისტული ყვავილებით',
       datePublished: '1919',
     },
     inLanguage: 'ka',

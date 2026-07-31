@@ -5,9 +5,9 @@ import { socialMeta } from '@/lib/site';
 import './not-found.css';
 
 export const metadata: Metadata = {
-  title: 'გვერდი ვერ მოიძებნა - არტისტული ყვავილები',
+  title: 'გვერდი ვერ მოიძებნა - თავის ქალა არტისტული ყვავილებით',
   ...socialMeta({
-    title: 'გვერდი ვერ მოიძებნა - არტისტული ყვავილები',
+    title: 'გვერდი ვერ მოიძებნა - თავის ქალა არტისტული ყვავილებით',
     slug: 'not-found',
   }),
 };

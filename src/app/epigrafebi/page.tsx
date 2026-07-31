@@ -5,9 +5,9 @@ import { getPoemById } from '@/data';
 import { socialMeta } from '@/lib/site';
 
 export const metadata: Metadata = {
-  title: 'ეპიგრაფები - არტისტული ყვავილები',
+  title: 'ეპიგრაფები - თავის ქალა არტისტული ყვავილებით',
   ...socialMeta({
-    title: 'ეპიგრაფები - არტისტული ყვავილები',
+    title: 'ეპიგრაფები - თავის ქალა არტისტული ყვავილებით',
     slug: 'epigrafebi',
   }),
 };
