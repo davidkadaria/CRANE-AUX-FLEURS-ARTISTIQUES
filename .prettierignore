@@ -11,3 +11,4 @@ content/poems/
 # Generated from content/poems/ by scripts/build-poems.mjs
 src/data/poems.json
 .og-cache.json
+LICENSE.md
