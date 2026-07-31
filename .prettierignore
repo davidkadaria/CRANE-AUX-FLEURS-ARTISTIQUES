@@ -1,0 +1,13 @@
+# Build output / deps
+.next/
+out/
+node_modules/
+package-lock.json
+
+# Poem sources  hand-authored text, must never be reformatted
+# (prettier would rewrite the *** footnote separator, quotes, etc.)
+content/poems/
+
+# Generated from content/poems/ by scripts/build-poems.mjs
+src/data/poems.json
+.og-cache.json

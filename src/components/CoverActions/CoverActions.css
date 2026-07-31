@@ -1,0 +1,45 @@
+.CoverActions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 26px;
+    row-gap: 4px;
+    margin-top: 14px;
+}
+
+.CoverActions__action {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 2px 5px;
+    border-bottom: 1px dotted var(--color-cover-hint);
+    font-family: var(--font-ui);
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--color-cover-secondary);
+    transition:
+        color 0.2s,
+        border-color 0.2s;
+}
+
+.CoverActions__action:hover,
+.CoverActions__action:focus-visible {
+    border-bottom-style: solid;
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+[data-theme='dark'] .CoverActions__action:hover,
+[data-theme='dark'] .CoverActions__action:focus-visible {
+    border-color: var(--color-title);
+    color: var(--color-title);
+}
+
+/* Media queries (mobile-first, Bootstrap breakpoints) */
+
+@media (min-width: 768px) {
+    .CoverActions {
+        column-gap: 34px;
+        margin-top: 18px;
+    }
+}

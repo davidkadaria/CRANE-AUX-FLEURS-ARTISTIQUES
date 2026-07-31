@@ -1,0 +1,77 @@
+.ReadingControls__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font: inherit;
+    font-size: 17px;
+    line-height: 1;
+    color: inherit;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 10px;
+    background: transparent;
+    transition: color 0.2s;
+}
+
+.ReadingControls__button:hover,
+.ReadingControls__button:focus-visible {
+    color: var(--color-accent);
+}
+
+[data-theme='dark'] .ReadingControls__button:hover,
+[data-theme='dark'] .ReadingControls__button:focus-visible {
+    color: var(--color-title);
+}
+
+.ReadingControls__button--active {
+    color: var(--color-accent);
+}
+
+[data-theme='dark'] .ReadingControls__button--active {
+    color: var(--color-title);
+}
+
+/* Text-size popover  panel echoes the tooltip styling (see styles/tooltip.css) */
+
+.ReadingControls__sizeWrap {
+    position: relative;
+    display: inline-flex;
+}
+
+.ReadingControls__sizePanel {
+    position: absolute;
+    bottom: calc(100% + 7px);
+    left: 50%;
+    translate: -50% 0;
+    display: flex;
+    align-items: baseline;
+    padding: 2px 6px;
+    border: 1px solid var(--color-rule);
+    background: var(--color-page);
+    z-index: 10;
+}
+
+.ReadingControls__sizeOption {
+    padding: 8px 7px;
+    font-family: var(--font-body);
+    line-height: 1;
+    color: var(--color-muted);
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.ReadingControls__sizeOption:hover,
+.ReadingControls__sizeOption:focus-visible {
+    color: var(--color-accent);
+}
+
+.ReadingControls__sizeOption--active {
+    color: var(--color-accent);
+}
+
+[data-theme='dark'] .ReadingControls__sizeOption:hover,
+[data-theme='dark'] .ReadingControls__sizeOption:focus-visible,
+[data-theme='dark'] .ReadingControls__sizeOption--active {
+    color: var(--color-title);
+}

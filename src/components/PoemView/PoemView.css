@@ -1,0 +1,66 @@
+.PoemView__roman {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* Mockup 2d: numeral recedes to muted in dark mode */
+[data-theme='dark'] .PoemView__roman {
+    color: var(--color-muted);
+}
+
+.PoemView__title {
+    margin-top: 22px;
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    color: var(--color-title);
+}
+
+.PoemView__epigraph {
+    width: fit-content;
+    margin: 28px auto 0;
+    font-family: var(--font-latin);
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--color-muted);
+}
+
+.PoemView__body {
+    width: fit-content;
+    margin: 34px auto 0;
+    font-size: var(--poem-font-size);
+    line-height: var(--verse-line-height);
+}
+
+.PoemView__stanza:not(:first-child) {
+    margin-top: calc(var(--verse-line-height) * 1em);
+}
+
+.PoemView__line {
+    display: block;
+    /* Hanging indent: when a verse line is too long for the screen, its
+       continuation is indented (as in printed editions) so it can't be
+       mistaken for a new line. No effect on lines that fit. */
+    padding-left: 1.4em;
+    text-indent: -1.4em;
+}
+
+.PoemView__endRule {
+    width: 56px;
+    margin: 34px auto 0;
+    border-top: 1px solid var(--color-rule);
+}
+
+.PoemView__note {
+    width: fit-content;
+    margin: 22px auto 0;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--color-muted);
+}

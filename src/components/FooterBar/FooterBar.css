@@ -1,0 +1,76 @@
+/* Quiet chrome per mockups 2b/2d  muted, recedes behind the page (owner, 2026-07-31) */
+.FooterBar {
+    margin-top: 18px;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    color: var(--color-muted);
+}
+
+.FooterBar__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FooterBar__side a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 8px;
+    letter-spacing: 2px;
+    transition: color 0.2s;
+}
+
+.FooterBar__side a:hover,
+.FooterBar__side a:focus-visible {
+    color: var(--color-accent);
+}
+
+[data-theme='dark'] .FooterBar__side a:hover,
+[data-theme='dark'] .FooterBar__side a:focus-visible {
+    color: var(--color-title);
+}
+
+.FooterBar__side {
+    flex: 1;
+    display: flex;
+}
+
+.FooterBar__side--left {
+    justify-content: flex-start;
+}
+
+.FooterBar__side--right {
+    justify-content: flex-end;
+}
+
+.FooterBar__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.FooterBar__below {
+    display: flex;
+    justify-content: center;
+}
+
+.FooterBar__below a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: var(--color-muted);
+    transition: color 0.2s;
+}
+
+.FooterBar__below a:hover,
+.FooterBar__below a:focus-visible {
+    color: var(--color-accent);
+}
+
+[data-theme='dark'] .FooterBar__below a:hover,
+[data-theme='dark'] .FooterBar__below a:focus-visible {
+    color: var(--color-title);
+}

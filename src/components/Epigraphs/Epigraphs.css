@@ -1,0 +1,28 @@
+.Epigraphs {
+    width: fit-content;
+    margin: 10dvh auto 0;
+}
+
+.Epigraphs__item:not(:first-child) {
+    margin-top: 40px;
+}
+
+.Epigraphs__text {
+    font-family: var(--font-latin);
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.Epigraphs__line {
+    display: block;
+}
+
+.Epigraphs__author {
+    margin-top: 4px;
+    text-align: right;
+    font-family: var(--font-latin);
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--color-muted);
+}

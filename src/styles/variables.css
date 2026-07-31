@@ -1,0 +1,52 @@
+/* Design tokens  source: design_handoff_artistic_flowers/README.md */
+
+:root {
+    /* Light (paper) */
+    --color-page: #f5efdf;
+    --color-page-cover: #efe8d5;
+    --color-ink: #2b2a26;
+    --color-ink-cover: #26231c;
+    --color-title: #2b2a26;
+    --color-rule: #2b2a26;
+    --color-muted: #6f6448; /* darkened from handoff #9a8c6b  too faint on paper (owner, 2026-07-30) */
+    --color-toc-leader: #a99a77;
+    --color-toc-page-num: #6f6448;
+    /* Cover secondary/hint darkened from handoff (#4a4436 / #8d7f60)  too faint (owner, 2026-07-30) */
+    --color-cover-secondary: #3a3428;
+    --color-cover-hint: #6f6448;
+
+    /* Accent blue (links, modern touches if needed) */
+    --color-accent: #2a4d9b;
+    --color-accent-hover: #1d3a7a;
+
+    /* Typography  self-hosted, see fonts.css. Alternatives (planned settings page):
+     body 'BPG Irubaqidze', titles 'ALK Tommaso'  hosted, swap the first name to use. */
+    --font-body: 'BPG Classic Medium', 'Noto Serif Georgian', Georgia, serif;
+    --font-title: 'BPG WEB 002 Caps', 'Noto Serif Georgian', Georgia, serif;
+    --font-latin: 'PT Serif', Georgia, 'Times New Roman', serif;
+    --font-ui: 'Noto Sans Georgian', system-ui, sans-serif;
+    --font-cover-latin: 'Philosopher', 'PT Serif', serif;
+
+    /* Reading font size (user-adjustable: 12 / 14 / 16 / 18px) */
+    --poem-font-size: 16px;
+
+    /* Spacing / rules */
+    --page-padding: 26px 30px 18px;
+    --rule-header: 1.5px;
+    --verse-line-height: 2;
+}
+
+[data-theme='dark'] {
+    /* Dark ("night facsimile", Galaktion's blue) */
+    --color-page: #131722;
+    --color-page-cover: #131722;
+    --color-ink: #d9d4c3;
+    --color-ink-cover: #d9d4c3;
+    --color-title: #ffffff;
+    --color-rule: #5b6480;
+    --color-muted: #8b93ad;
+    --color-toc-leader: #5b6480;
+    --color-toc-page-num: #8b93ad;
+    --color-cover-secondary: #8b93ad;
+    --color-cover-hint: #8b93ad;
+}

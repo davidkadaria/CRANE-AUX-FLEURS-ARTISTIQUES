@@ -1,0 +1,111 @@
+.Cover {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 22px;
+    background-color: var(--color-page-cover);
+    color: var(--color-ink-cover);
+}
+
+.Cover__frame {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    border: 2.5px solid var(--color-ink-cover);
+    padding: 5px;
+}
+
+.Cover__inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--color-ink-cover);
+    padding: 44px 22px 36px;
+}
+
+.Cover__author {
+    font-family: var(--font-title);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+
+.Cover__middle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Cover__title {
+    font-family: var(--font-cover-latin);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.Cover__years {
+    margin-top: 16px;
+    font-family: var(--font-latin);
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--color-cover-secondary);
+}
+
+.Cover__mcmxix {
+    font-family: var(--font-latin);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.Cover__city {
+    margin-top: 6px;
+    font-family: var(--font-title);
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.Cover__hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 26px;
+    padding: 6px 10px;
+    font-family: var(--font-ui);
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--color-cover-hint);
+    transition: color 0.2s;
+}
+
+.Cover__hintArrow {
+    transition: transform 0.2s;
+}
+
+.Cover__hint:hover,
+.Cover__hint:focus-visible {
+    color: var(--color-accent);
+}
+
+.Cover__hint:hover .Cover__hintArrow,
+.Cover__hint:focus-visible .Cover__hintArrow {
+    transform: translateX(4px);
+}
+
+[data-theme='dark'] .Cover__hint:hover,
+[data-theme='dark'] .Cover__hint:focus-visible {
+    color: var(--color-title);
+}
+
+/* Media queries (mobile-first, Bootstrap breakpoints) */
+
+@media (min-width: 768px) {
+    .Cover__frame {
+        max-width: 520px;
+        margin-inline: auto;
+    }
+}

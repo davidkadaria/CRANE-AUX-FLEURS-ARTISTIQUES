@@ -1,0 +1,9 @@
+html {
+    background-color: var(--color-page);
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-ink);
+    background-color: var(--color-page);
+}

@@ -1,0 +1,76 @@
+.Toc__heading {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.Toc__search {
+    display: block;
+    width: min(320px, 100%);
+    margin: 24px auto 0;
+    padding: 4px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px dotted var(--color-toc-leader);
+    text-align: center;
+    font: inherit;
+    font-family: var(--font-ui);
+    font-size: 14px;
+    color: inherit;
+}
+
+.Toc__search:focus {
+    outline: none;
+    border-bottom-color: var(--color-muted);
+}
+
+.Toc__search::placeholder {
+    color: var(--color-muted);
+}
+
+.Toc__list {
+    margin-top: 32px;
+}
+
+.Toc__row:not(:first-child) {
+    margin-top: 16px;
+}
+
+.Toc__link {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 15px;
+    /* Roomier than default  titles wrap to two lines on narrow phones */
+    line-height: 1.7;
+}
+
+/* Dotted leader as in mockup 2c / the printed book  kept without page numbers
+   (owner, 2026-07-31) */
+.Toc__leader {
+    flex: 1;
+    min-width: 14px;
+    border-bottom: 1px dotted var(--color-toc-leader);
+}
+
+/* Row-end marks in the old page-number slot: ⚑ bookmarked, → last read */
+.Toc__marker {
+    display: inline-flex;
+    align-self: center;
+    font-size: 12px;
+    color: var(--color-accent);
+}
+
+[data-theme='dark'] .Toc__marker {
+    color: var(--color-title);
+}
+
+.Toc__count {
+    margin-top: 44px;
+    text-align: center;
+    font-family: var(--font-ui);
+    font-size: 13px;
+    color: var(--color-muted);
+}

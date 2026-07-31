@@ -1,0 +1,42 @@
+{
+  "name": "artistic-flowers",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web edition of Galaktion Tabidze's 1919 poetry collection არტისტული ყვავილები (Crâne aux Fleurs Artistiques)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "validate:poems": "node scripts/validate-poems.mjs",
+    "build:poems": "node scripts/build-poems.mjs",
+    "predev": "npm run build:poems",
+    "prebuild": "npm run build:poems && npm run build:og && npm run build:icons",
+    "prevalidate:poems": "npm run build:poems",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "build:og": "node scripts/build-og.mjs",
+    "build:icons": "node scripts/build-icons.mjs"
+  },
+  "dependencies": {
+    "next": "^16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^26.1.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.5.4",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.2.12",
+    "png-to-ico": "^3.0.2",
+    "postcss": "^8.5.24",
+    "prettier": "^3.9.6",
+    "satori": "^0.29.0",
+    "sharp": "^0.35.3",
+    "typescript": "^6.0.3",
+    "wawoff2": "^2.0.1"
+  }
+}

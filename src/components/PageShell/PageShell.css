@@ -1,0 +1,21 @@
+.PageShell {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding: var(--page-padding);
+}
+
+.PageShell__content {
+    flex: 1;
+    margin-top: 40px;
+}
+
+/* Media queries (mobile-first, Bootstrap breakpoints) */
+
+@media (min-width: 768px) {
+    .PageShell {
+        width: 100%;
+        max-width: 640px;
+        margin-inline: auto;
+    }
+}
