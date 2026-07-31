@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { preload } from 'react-dom';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
 import { FONT_SIZES } from '@/lib/storage';
@@ -65,6 +66,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Critical fonts (body text + titles = LCP): preload to cut the
+  // html -> css -> font request chain
+  for (const font of ['bpg-classic-medium', 'bpg-web-002-caps']) {
+    preload(`/fonts/${font}.woff2`, {
+      as: 'font',
+      type: 'font/woff2',
+      crossOrigin: 'anonymous',
+    });
+  }
   return (
     <html lang="ka" suppressHydrationWarning>
       <body>

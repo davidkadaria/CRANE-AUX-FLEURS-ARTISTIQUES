@@ -6,7 +6,7 @@ import './Cover.css';
 
 export function Cover() {
   return (
-    <div className="Cover">
+    <main className="Cover">
       <div className="Cover__frame">
         <div className="Cover__inner">
           <p className="Cover__author">გალაკტიონ ტაბიძე</p>
@@ -30,6 +30,6 @@ export function Cover() {
       </div>
       <CoverActions />
       <Colophon />
-    </div>
+    </main>
   );
 }

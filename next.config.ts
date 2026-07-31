@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
   // prerendered (SSG), but the edit-request API route needs a serverless
   // function on Vercel - static export cannot host one.
   trailingSlash: true,
+  // Our CSS is a few KiB total - inlining it removes the render-blocking
+  // stylesheet request and lets the browser discover fonts immediately
+  experimental: {
+    inlineCss: true,
+  },
   images: {
     unoptimized: true,
   },
