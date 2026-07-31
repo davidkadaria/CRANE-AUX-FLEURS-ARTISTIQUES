@@ -17,8 +17,11 @@ roman numerals.
   ("night facsimile"), bookmarks, last-read position
 - Generated social meta images for every page (Open Graph / Twitter /
   Google rich-result ratios) in the site's own typography
+- Select any verse → "რედაქტირების მოთხოვნა" → readers can propose
+  corrections, delivered straight to the editor via Telegram
 - Original skull-with-bouquet mark as favicon / app icon, PWA manifest
-- Fully static - no server, no database, no tracking beyond GA4
+- Statically prerendered; one serverless endpoint relays reader edit
+  requests to Telegram. No database, no tracking beyond GA4
 
 ## Stack
 
@@ -31,7 +34,7 @@ self-hosted Georgian fonts.
 ```bash
 npm install
 npm run dev            # develop (poems.json regenerates automatically)
-npm run build          # static export → out/ (also regenerates meta images + icons)
+npm run build          # production build (also regenerates meta images + icons)
 npm run lint           # eslint
 npm run format         # prettier
 npm run validate:poems # sanity-check the poem data

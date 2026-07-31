@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
+  EditRequest,
   FooterBar,
   Icon,
   PageShell,
@@ -111,6 +112,7 @@ export default async function PoemPage({ params }: PoemPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <PoemView poem={poem} />
+      <EditRequest poemId={poem.id} poemTitle={poem.title} />
     </PageShell>
   );
 }
